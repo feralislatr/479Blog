@@ -1,0 +1,13 @@
+Proxy Design Pattern
+The Proxy design pattern is a structural pattern. In the pattern, there is a class that serves as an interface for another object. 
+It serves as a placeholder/pass-through object and saves memory by reducing requests and creating new instances of the original object. 
+The proxy can have extra functionality as well such as caching or some kind of check/access function. <br>
+In my example I have a RealTV object and a TVProxy object. The RealTV object has variables for the current channel and power state. 
+It also has a method for switching channels. The TVProxy class extends RealTV objects. 
+The proxy also has a check to check if the user has cable. If the user does not have cable, it will not switch channels. 
+If the TV is off, it will also not switch channels.  
+Only when all the requirements are right, will the TVProxy call for the switching channel method.
+<br><br>
+<iframe height='268' scrolling='no' src='//codepen.io/kalina/embed/QyVaEo/?height=268&theme-id=0&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/kalina/pen/QyVaEo/'>479-Project4-Proxy</a> by Kal (<a href='http://codepen.io/kalina'>@kalina</a>) on <a href='http://codepen.io'>CodePen</a>.</iframe>
+<br>
+-Kalina

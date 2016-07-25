@@ -1,0 +1,13 @@
+Strategy
+The Strategy design pattern is a behavioral pattern. It can have many interchangeable encapsulated algorithms for a specific task.
+Methods can be selected at runtime. This allows variation of the algorithm between independent clients. <br>
+In my example I created a situation where the goal is to try and stay awake. There are multiple strategies that can be selected.
+Each one will produce a different print result. <br>
+Each strategy is a class that inherits from a generic 'stay awake' strategy class. Each strategy has its own effectiveness() method implemented to yield a different result. 
+A stay awake strategy is then created. Selecting a strategy will set the strategy method for the stay awake strategy object.
+<br><br>
+<iframe height='268' scrolling='no' src='//codepen.io/kalina/embed/rxZrWQ/?height=268&theme-id=0&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/kalina/pen/rxZrWQ/'>479-Project4-Strategy</a> by Kal (<a href='http://codepen.io/kalina'>@kalina</a>) on <a href='http://codepen.io'>CodePen</a>.
+</iframe>
+Note: the tears method is not in use
+<br>
+- Kalina

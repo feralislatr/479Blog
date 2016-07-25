@@ -1,0 +1,19 @@
+The Factory design pattern is used quite frequently in Javascript. 
+
+Though we tend to create objects by using the "new" operator, objects 
+
+can also be created with a Factory through a generic interface. This 
+
+interface allows us to specify the type of object to be created.
+<br>
+<br>
+
+In the example, the Factory creates dots, but there are three different 
+
+types of dots to be created. Depending on their type attribute, a hero, 
+
+foe, or food dot will be created. 
+
+<iframe height='268' scrolling='no' src='//codepen.io/feralislatr/embed/rxZWBm/?height=268&theme-id=0&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/feralislatr/pen/rxZWBm/'>Factory Pattern</a> by Bri (<a href='http://codepen.io/feralislatr'>@feralislatr</a>) on <a href='http://codepen.io'>CodePen</a>.
+</iframe>
+-Bri

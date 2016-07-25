@@ -1,0 +1,21 @@
+The Template Method is a behavioral pattern in which the main structure of an algorithm is defined in a method of an
+abstract class or interface, but the steps themselves are implemented by subclasses. 
+This allows one algorithm to be adapted to specific subclasses without changing its strucure.
+<br></br>
+
+My example defines a Shopper class which isn't be explicitly abstract because this is JavaScript, so we pretend it is
+abstract. Two subclasses - Robber and Monkey - are capable of going shopping. The shop method performs the 
+same steps in order, but depending on the concrete subclass, these steps are implemented differently.
+For example, a Robber enters the store differently than a monkey, but both must enter the store in order
+to shop. It's the same formula, just performed differently according to who is doing it.
+<br></br>
+
+<iframe height='589' scrolling='no' src='//codepen.io/dwegrzyn/embed/QyVGjy/?height=589&theme-id=0&default-tab=result' 
+frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen 
+<a href='http://codepen.io/dwegrzyn/pen/QyVGjy/'>Template Pattern</a> by Danielle Wegrzyn 
+(<a href='http://codepen.io/dwegrzyn'>@dwegrzyn</a>) on <a href='http://codepen.io'>CodePen</a>.
+</iframe>
+
+
+<br></br>
+-Danielle

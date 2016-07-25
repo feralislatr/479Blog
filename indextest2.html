@@ -1,0 +1,96 @@
+<!doctype>
+
+<html>
+    <head>
+        <title>blog</title>
+        
+        <script src="https://cdn.firebase.com/js/client/2.4.0/firebase.js"></script>
+        <link id="pagestyle" type="text/css" href="css/eye-burn.css" rel="stylesheet"/>
+        
+         <!--<script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+          <script>tinymce.init({ selector:'textarea' });</script>-->
+    </head>
+    
+    <body id="pagenum">
+        <nav>
+           
+            <ul id="left-nav">
+                
+                  <li>
+                          
+                         <div id ="switchtheme">
+                            Theme:  
+                          <div id="themeSelect">style</div>
+                          <div id="theme-dropdown">
+                              <!--<a href='#switchtheme' >Default</a> 
+                              <a href='#switchtheme' >Inverse?</a> -->
+                          </div>
+                        </div>
+                  
+                </li>
+            </ul>
+            <ul id="right-nav">
+                <li>
+                    <a href='#add' id = "addPost">
+                       +
+                   </a> 
+                </li>
+                <li>
+                   <a href="#">
+                       All
+                   </a> 
+                </li>
+              
+                
+            </ul>
+        </nav>
+        <div class="container">
+            <h1 class="blogtitle">Blog Title</h1>
+            
+            <!--
+           <div class="post">
+                <div class="posthead">
+                    <a href="#">
+                        <h2>
+                            Heading
+                        </h2>
+                    </a>
+                </div>
+                <div class="postbody">
+                    <p>
+                        Post text
+                    </p>
+                </div>
+                
+            </div>
+-->
+        
+        </div> <!-- /container -->
+        
+        
+        <div class="overlay">
+            <div class="modal">
+                <form class="modalform">
+                    <input type="text" placeholder="Title" id="inTitle"/>
+                    <textarea placeholder= "dear diary..." id="inText"></textarea>
+                    <div id="textDiv"></div>
+                    
+                </form>
+                <button type="button" id="modalsave">
+                    Save & Close
+                </button>
+                <!--<button type="button" id="modalclose">-->
+                <!--    Close-->
+                <!--</button>-->
+                
+            </div>
+            
+        </div>
+        <script src="script.js"></script>
+        <script type="text/javascript" charset="utf-8" src="themeswitch.js"></script>
+        
+    </body>
+    
+    
+
+</html>

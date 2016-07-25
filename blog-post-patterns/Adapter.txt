@@ -1,0 +1,38 @@
+The Adapter Design Pattern is used to make classes with different interfaces work together.
+This pattern assumes two pre-existing classes/interfaces that are not directly compatible.
+The connection is created by making an instance of an adapter class, which converts the interface of 
+one class into the interface of another which is more expected.
+<br></br>
+
+<iframe height='482' scrolling='no' src='//codepen.io/dwegrzyn/embed/xZagjb/?height=482&theme-id=0&default-tab=result'
+frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>
+See the Pen <a href='http://codepen.io/dwegrzyn/pen/xZagjb/'>Adapter Pattern</a> by Danielle Wegrzyn 
+(<a href='http://codepen.io/dwegrzyn'>@dwegrzyn</a>) on <a href='http://codepen.io'>CodePen</a>.</iframe>
+
+<br></br>
+My example contains two "incompatible" classes - Dog and Human. Their methods are specific to their classes 
+ie, printDogName vs. printHumanName. A dog has no last name and has a "Woof!" greeting. A human says "Hello"
+and introduces themselves with their first and last name.
+<br></br>
+Let's say some dogs want to be treated like humans. We create a HumanAdapter class that extends Human,
+so it has all the same methods as a human. We give the adapter a Dog property. This is the dog that 
+is basically wearing a "HumanAdapter" disguise. We then override the Human methods and adapt them in a way 
+that our HumanAdapter can use on a Dog. We implement these methods using the properties of the dog we 
+have stored in our Adapter. 
+
+<br></br>
+For example, printHumanName now prints the Dog's name and familyName together as if it were a 
+normal human full name. PrintHumanAge converts the dog's age to human years.
+So, if we have a dog Spot and we want to be able to call Spot.printHumanName, we make a HumanAdapter with Spot inside
+and call adapter.printHumanName();
+<br></br>
+-Danielle
+<br></br>
+Notes: 
+<br></br>
+1) The buttons in my example do not actually allow the user to call dog.printHumanName, human.printDogAge, 
+etc. because these would cause an error.
+<br></br>
+2) In my example, a dog in a HumanAdapter disguise forgets about its previous life as a Dog and can not 
+recognize Dog methods anymore. In some cases, you would want to add the Dog methods in as well, so that you 
+have a being that can handle ANY kind of method calls - both Human and Dog.

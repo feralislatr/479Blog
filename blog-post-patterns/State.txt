@@ -1,0 +1,22 @@
+The State Design Pattern is a behavioral pattern in which an object's behavior changes according to its state.
+Instances of the states are created, and the state is stored as a mutable property of the class.
+Then, the class's methods pass the action calls on to the object's state.
+This prevents lots of state-checking conditionals in the methods: "is the object's state == state1? ==state2? ==state3?
+then we do case1, case2, case3.." 
+by simply passing the call onto the state: "this.state.action()". It also makes it easier to add/remove states 
+without altering the object's class.
+<br></br>
+
+My example has a Person class which holds a state. There are two states - Good and Evil.
+The Person's actions (celebrate and mourn) are called on the person's state.
+You can click buttons to change the state and to perform an action.
+Note that though the method is the same, the action results differ depending on the person's state.
+
+<iframe height='1042' scrolling='no' src='//codepen.io/dwegrzyn/embed/VeGKQQ/?height=1042&theme-id=0&default-tab=result' 
+frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>
+See the Pen <a href='http://codepen.io/dwegrzyn/pen/VeGKQQ/'>State Pattern</a> by Danielle Wegrzyn 
+(<a href='http://codepen.io/dwegrzyn'>@dwegrzyn</a>) on <a href='http://codepen.io'>CodePen</a>.
+</iframe>
+
+<br></br>
+-Danielle

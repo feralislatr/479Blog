@@ -1,0 +1,8 @@
+This pattern adds an extra layer of security and is typically coupled with the Module pattern. The security is achieved by wrapping the complexity of the code in an annonymous function.
+<br>
+<br>
+In the demonstration, the main function is drawDots, but the implemntation is wrapped in an anonymous function. A function is defined and called within drawDots, but to run that function, drawDots must be called.
+
+<iframe height='268' scrolling='no' src='//codepen.io/feralislatr/embed/Wrgpae/?height=268&theme-id=0&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/feralislatr/pen/Wrgpae/'>Facade pattern</a> by Bri (<a href='http://codepen.io/feralislatr'>@feralislatr</a>) on <a href='http://codepen.io'>CodePen</a>.
+</iframe>
+-Bri

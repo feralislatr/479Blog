@@ -1,0 +1,280 @@
+/*------------------ dropdown theme ------------------- */
+
+@import url(https://fonts.googleapis.com/css?family=Sarina|Baumans);
+
+body{
+    font-family: 'Baumans', 'Comic Sans MS', sans-serif;
+    color: #333;
+    background-color: skyblue;
+    background-image: url('https://farm6.staticflickr.com/5067/5584892057_b6a2802c5f_o_d.jpg');
+}
+
+
+a{
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all ease .5s;
+    color: #333;
+    
+}
+
+a:hover, .posthead a:hover{
+    color: rgba(51,161,236, 0.6);
+}
+
+/*----------------------Vertical Nav-----------------------*/
+nav{
+    position: fixed;
+    top:0;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    height: 300px;
+    background-color: #f9e362;
+   
+    box-shadow: 0 2px 10px 0 #999;
+    z-index: 5;
+   
+}
+
+
+nav ul{
+     list-style-type:none;
+}
+
+
+nav ul li a{
+    display: block;
+    padding:0 10px;
+    margin-bottom: 15px;
+}
+
+#left-nav{
+    width: 50%;
+    list-style-type:none;
+    float: left;
+    margin-top: 200px;
+    text-align: center;
+}
+
+
+#right-nav{
+    width: 50%;
+    float: left;
+    list-style-type:none;
+    margin-top: -200px;
+    text-align: center;
+    margin-left: -20px;
+}
+
+#right-nav li{
+    margin-bottom:50px;
+}
+
+
+
+/*------------------ dropdown theme ------------------- */
+
+
+
+#switchtheme{
+    float:left;
+    position: relative;
+    /*display: inline-block;*/
+    margin-left: -30px;
+}
+
+#switchtheme a{
+    display: block;
+    float: left;
+    /*padding:10px;*/
+    padding-bottom: 0;
+    text-align: left;
+}
+
+#theme-dropdown{
+    display: none;
+    position: absolute;
+    left: -5px;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+
+
+#themeSelect{
+    text-transform: capitalize;
+    display: inline-block;
+}
+
+
+#switchtheme:hover #theme-dropdown{
+    display: block;
+    text-transform: capitalize;
+}
+
+.selectedTheme{
+    color: #e95f63;
+}
+
+
+
+/*--- end dropdown theme --*/
+
+
+
+.container{
+    position:relative;
+    width:70%;
+    margin: 0 auto;
+    top:50px;
+}
+
+.blogtitle,
+.posttitle{
+    text-align:center;
+    margin-top: 15px;
+    width: 60%;
+    margin-left: 200px;
+    border-radius: -10px;
+    font-size: 50px;
+    color: rgba(51,161,236, 0.6);
+    font-family: 'Sarina', sans-serif;
+    z-index: 10;
+}
+
+.blogtitle{
+    margin-bottom: 100px;
+}
+
+
+/*airplane*/
+.blogtitle::after{
+    /*content: url('https://pixabay.com/static/uploads/photo/2012/04/26/19/31/plane-42892_960_720.png');*/
+    content: url('https://pixabay.com/static/uploads/photo/2012/04/26/19/31/plane-42892_960_720.png');
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    right: 220px;
+    top: 20px;
+    transform: scale(.4);
+    -webkit-transform: scale(.4);
+    -moz-transform: scale(.4);
+   display: inline-block;
+}
+
+
+/*Posts - 2 column layout */
+.post{
+    /*border: solid 1px #f5dce3;
+    border-radius: 15px;*/
+    margin-bottom:5%;
+    width: 40%;
+    height: 15em;
+    margin-left: 8%;
+    float: left;
+    overflow: hidden;
+    background-color: rgba(255,255,255, 0.2);
+}
+
+.post p{
+    padding:10px;
+    
+}
+
+.posthead{
+    width:99%;
+    /*border-bottom: solid 1px #f5dce3;
+    padding-left:10px;*/
+    padding-left: 5px;
+    font-family: 'Sarina', sans-serif;
+}
+
+.posthead a{
+    color: #e95f63;
+}
+
+/*balloons*/
+.posthead::before, .postdate::before {
+   content: url('https://pixabay.com/static/uploads/photo/2014/11/05/13/08/hot-air-balloon-517857_960_720.png');
+    transform: scale(.2);
+    -webkit-transform: scale(.2);
+    -moz-transform: scale(.2);
+    width: 0px;
+    height: 0px;
+    display: inline-block;
+    position: absolute;
+    left: -50px;
+}
+
+.delete{
+    float:right;
+}
+
+/*MODAL STUFF
+===============================*/
+
+
+.overlay{
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width:100%;
+    height:100%;
+    text-align:center;
+    z-index: 10;
+    background-color:rgb(15, 15, 15, 0.2);
+}
+
+.modal{
+    width:300px;
+    margin: 100px auto;
+    padding:10px;
+    border: solid 1px #f5dce3;
+    background-color:#fffbfc;
+    border-radius: 15px;
+    text-align:center;
+}
+
+.modal button{
+    appearance: none;
+}
+#inText{
+    height: 100px;
+    width: 250px;
+    
+}
+
+.postdate{
+    font-size: 11px;
+}
+
+/*FULL POST
+============================*/
+#fullpost{
+    visibility:hidden;
+    
+}
+.posttext{
+    background-color: rgba(255,255,255, 0.2);
+    padding: 10px;
+}
+
+.postdate{
+    text-align: right;
+}
+
+.container button{
+    padding: 20px;
+    width: 150px;
+    color: #333;
+    margin-right: 50px;
+    font-size: 15px;
+    border-style: none;
+    background-color: white;
+    border-radius: 50%;
+}

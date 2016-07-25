@@ -1,0 +1,9 @@
+The module pattern is often used with the facade pattern. It is also very difficult to make an obvious example without the previously defined pattern. This pattern helps emulate the idea of private and public methods within an object. 
+<br>
+<br>
+In this demonstration, a function is defined within an anonymous function. At the end of the anonymous function, the variable (or function) to be defined outside of the anonymous function is called within. This allows global access to the private variable or function. The newly global function is then called twice.
+
+
+<iframe height='268' scrolling='no' src='//codepen.io/feralislatr/embed/eJLxzW/?height=268&theme-id=0&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/feralislatr/pen/eJLxzW/'>eJLxzW</a> by Bri (<a href='http://codepen.io/feralislatr'>@feralislatr</a>) on <a href='http://codepen.io'>CodePen</a>.
+</iframe>
+-Bri 

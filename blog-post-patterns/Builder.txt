@@ -1,0 +1,16 @@
+
+The Builder design pattern is a creational pattern. The pattern separates the construction of the object with the representation.
+The same step-by-step process can result in many different representations. A builder object separate from the object being created exists.
+It takes in parts of the object and constructs it. 
+This can solve problems where there are many parameters and combinations in the object constructor. <br>
+In my simple example, a single piece of chocolate is being created. 
+The user selects the parts that make up a chocolate and the builder will put them together and return a chocolate bon bon object. 
+Each component has its own method in the builder object. 
+A more complex example could probably have more subclasses that might have some unique price or property that might be calculated.
+
+<br>
+<iframe height='268' scrolling='no' src='//codepen.io/kalina/embed/obPzQq/?height=268&theme-id=0&default-tab=result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='http://codepen.io/kalina/pen/obPzQq/'>479-Project4-Builder</a> by Kal (<a href='http://codepen.io/kalina'>@kalina</a>) on <a href='http://codepen.io'>CodePen</a>.
+</iframe>
+(forgive me for the heart)
+<br>
+- Kalina

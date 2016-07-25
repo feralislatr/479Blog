@@ -1,0 +1,83 @@
+<!doctype>
+
+<html>
+    <head>
+        <title>blog</title>
+        
+        <script src="https://cdn.firebase.com/js/client/2.4.0/firebase.js"></script>
+        <link type="text/css" href="style/style3.css" rel="stylesheet"/>
+    </head>
+    
+    <body id="pagenum">
+        <nav>
+            <ul>
+                <li>
+                    <a href='#add' id = "addPost">
+                       +
+                   </a> 
+                </li>
+                <li>
+                   <a href="#">
+                       All
+                   </a> 
+                </li>
+              
+                
+            </ul>
+        </nav>
+        <div class="container">
+            <h1 class="blogtitle">Blog Title</h1>
+            
+            <!--
+           <div class="post">
+                <div class="posthead">
+                    <a href="#">
+                        <h2>
+                            Heading
+                        </h2>
+                    </a>
+                </div>
+                <div class="postbody">
+                    <p>
+                        Post text
+                    </p>
+                </div>
+                
+            </div>
+-->
+        
+        </div> <!-- /container -->
+        
+        
+        <div class="overlay">
+            <div class="modal">
+                <form class="modalform">
+                    <select>
+                        Theme
+                        <option>
+                            Theme1
+                        </option>
+                        <option>
+                            Theme2
+                        </option>
+                    </select>
+                    <input type="text" placeholder="Title" id="inTitle"/>
+                    <textarea placeholder= "dear diary..." id="inText"></textarea>
+                    
+                </form>
+                <button type="button" id="modalsave">
+                    Save & Close
+                </button>
+                <!--<button type="button" id="modalclose">-->
+                <!--    Close-->
+                <!--</button>-->
+                
+            </div>
+            
+        </div>
+        <script src="script.js"></script>
+    </body>
+    
+    
+
+</html>
